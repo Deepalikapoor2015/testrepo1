@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>New Input Types</title>
+</head>
+<body>
+
+    <form action="blank.html" method="get">
+        <fieldset>
+            <legend>Details</legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="This is required." autofocus 
+                       pattern="[A-Za-z]{10,}" title="Atleast 10 characters are allowed.">
+            </div>
+            <div>
+                <label for="mydate">Date:</label>
+                <input type="date" name="mydate" min="2015-01-01" max="2015-12-31">
+            </div>
+
+            <div>
+                <label for="mydateTime">DateTime:</label>
+                <input type="datetime"  name="mydate">
+            </div>
+
+            <div>
+                <label for="url">WebsiteUrl:</label>
+                <input type="url" name="url">
+            </div>
+            <div>
+                <label for="color">Color:</label>
+                <input type="color" name="color">
+            </div>
+            <div>
+                <label for="number">Number:</label>
+                <input type="number" name="number" max="10" min="1">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </fieldset>
+    </form>    
+</body>
+</html>

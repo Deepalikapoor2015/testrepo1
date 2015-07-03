@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Elements</title>
+</head>
+<body>
+    <h1>1. Data List</h1>
+    <label id="Listofbrowsers">List of browsers: </label>
+    <input list="browesers" name="browesers">
+    <datalist id="browesers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+    </datalist>
+    <br />
+    <br />
+    <h1>2. Output</h1>
+    <form oninput="x.value = parseInt(a.value) + parseInt(b.value); y.value=parseInt(a.value)*parseInt(b.value)">
+        Input 1: 0
+        <input type="range" id="a" name="a" min="0" max="100" value="0">
+        100 
+        <br />
+        Input 2:  <input type="number" id="b" name="b" value="0" min="0" max="200">
+        <br />
+        Sum: <output name="x" for="a b"></output>
+        <br />
+        Multiply: <output name="y" for="a b"></output>
+
+    </form>
+    <br />
+    <br />
+    <h1>3. Keygen</h1>
+    <form action="blank.html" method="get">
+      
+        Encryption: <keygen name="security" keytype="rsa">       
+        <input type="submit">
+    </form>
+</body>
+</html>

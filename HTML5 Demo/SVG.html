@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG Demo</title>
+    <script>
+        function changeAttibutesOfRectangle() {
+            var x = document.getElementById("myRect")
+            x.setAttribute("width", "100")
+            x.setAttribute("height", "150")
+        }
+    </script>
+</head>
+<body>
+    <h1>Example 1</h1>
+    <svg width="400" height="180" style="border:solid 1px">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+              style="fill:red;stroke:black;stroke-width:5;opacity:0.5">
+            <animate attributeName="x" begin="0s" dur="6s" from="100" to="10"/>
+            <animate attributeName="y" begin="0s" dur="6s" from="100" to="10" />
+            <animate attributeName="width" begin="0s" dur="6s" from="100" to="150" />
+            <animate attributeName="height"  begin="0s" dur="6s" from="100" to="120"/>
+            <animate attributeName="fill"  from="lime" to="red" begin="2s" dur="4s" />
+        </rect>
+
+    </svg>
+    <br />
+    <h1>Example 2</h1>
+    <svg width="400" height="180" style="border:solid 1px"> 
+        <rect onclick="changeAttibutesOfRectangle()" id="myRect" height="100" width="50"
+              style="fill:red;stroke:black;stroke-width:5;opacity:0.5">
+
+        </rect>
+    </svg>
+</body>
+</html>
